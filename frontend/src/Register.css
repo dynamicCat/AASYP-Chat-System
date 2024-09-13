@@ -1,0 +1,52 @@
+/* 整个容器居中对齐 */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* 注册卡片样式 */
+.register-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* 注册标题样式 */
+.register-title {
+  font-size: 24px;
+  color: #1877f2;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* 输入框样式 */
+.register-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 注册按钮样式 */
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #165fbb;
+}

@@ -1,0 +1,69 @@
+/* 整个容器居中对齐 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* 登录卡片样式 */
+  .login-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* 登录标题样式 */
+  .login-title {
+    font-size: 24px;
+    color: #1877f2;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  /* 输入框样式 */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* 登录按钮样式 */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #165fbb;
+  }
+  
+  /* 注册链接样式 */
+  .register-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #606770;
+  }
+  
+  .register-link a {
+    color: #1877f2;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
