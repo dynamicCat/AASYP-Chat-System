@@ -1,9 +1,23 @@
 from django.http import JsonResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, require_POST
 from .forms import RegisterForm
 import json
+
+@require_POST
+def update_timezone(request):
+    data = json.loads(request.body)
+    timezone = data.get('timeZone')
+
+    print(f"Received timezone: {timezone}")  
+
+    if timezone:
+        request.user.timezone = timezone
+        request.user.save()
+        return JsonResponse({'status': 'success'})
+    else:
+        return JsonResponse({'status': 'fail'}, status=400)
 
 @csrf_exempt
 def register_view(request):
