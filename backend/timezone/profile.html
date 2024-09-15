@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p>Your current time zone: <span id="timezone"></span></p>
+
+    <script src="{% static 'js/timezone_update.js' %}"></script>
+    <script>
+        document.getElementById('timezone').innerText = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    </script>
+</body>
+</html>
