@@ -42,7 +42,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-card">
-        <img src={logoImage} alt="AASYP Logo" className="logo-image"/>
+        <img src={logoImage} alt="AASYP Logo" className="logo-image" />
         <h2 className="login-title">Welcome to AASYP Chat</h2>
         <p className="login-subtitle">Sign in to connect with your AASYP community</p>
         <form onSubmit={handleSubmit}>
@@ -70,9 +70,9 @@ function Login({ onLogin }) {
           </div>
           <button type="submit" className="login-btn">Sign in</button>
         </form>
-        
+
         <div className="register-link">
-          Don't have an account? <Link to="/register" className="text-customOrange hover:text-customOrangeDark">Register</Link>
+          Don't have an account? <Link to="/register" className="text-customOrange hover:text-customOrangeDark"><strong>Register</strong></Link>
         </div>
       </div>
     </div>

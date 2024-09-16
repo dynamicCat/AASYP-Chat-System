@@ -1,35 +1,36 @@
 /* 整个容器居中对齐 */
 .register-container {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5;
+  justify-content: center;
+  background-color: white;
+  padding: 3rem 1rem;
 }
 
 /* 注册卡片样式 */
 .register-card {
-  background-color: white;
+  max-width: 28rem;
+  width: 100%;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 /* 注册标题样式 */
 .register-title {
-  font-size: 24px;
-  color: #1877f2;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 2rem;
 }
 
 /* 输入框样式 */
 .register-input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
@@ -38,15 +39,22 @@
 /* 注册按钮样式 */
 .register-btn {
   width: 100%;
-  padding: 10px;
-  background-color: #1877f2;
+  padding: 0.5rem;
+  background-color: rgb(4, 132, 146);
+  /* Custom Orange */
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 
+.login-link {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: rgb(4, 132, 146);
+}
+
 .register-btn:hover {
-  background-color: #165fbb;
+  background-color: rgba(4, 132, 146, 0.3);
 }

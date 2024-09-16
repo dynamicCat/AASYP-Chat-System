@@ -42,7 +42,7 @@ function Register() {
   return (
     <div className="register-container">
       <div className="register-card">
-        <h2 className="register-title">Create a New Account</h2>
+        <h2 className="register-title">Create A New Account</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -79,7 +79,7 @@ function Register() {
           <button type="submit" className="register-btn">Sign Up</button>
         </form>
         <p className="login-link">
-          Don't have an account? <Link to="/login">login here</Link>
+          Return back to <Link to="/login"><strong>login</strong></Link> page
         </p>
       </div>
     </div>
