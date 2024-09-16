@@ -1,4 +1,4 @@
-/* 整个容器居中对齐 */
+/* Center the entire container */
 .register-container {
   min-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   padding: 3rem 1rem;
 }
 
-/* 注册卡片样式 */
+/* Registration card style */
 .register-card {
   max-width: 28rem;
   width: 100%;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-/* 注册标题样式 */
+/* Registration title style */
 .register-title {
   font-size: 1.875rem;
   font-weight: 800;
@@ -26,7 +26,7 @@
   margin-bottom: 2rem;
 }
 
-/* 输入框样式 */
+/* Input field style */
 .register-input {
   width: 100%;
   padding: 10px;
@@ -36,7 +36,7 @@
   font-size: 16px;
 }
 
-/* 注册按钮样式 */
+/* Registration button style */
 .register-btn {
   width: 100%;
   padding: 0.5rem;
@@ -49,12 +49,14 @@
   cursor: pointer;
 }
 
+/*login link style*/
 .login-link {
   margin-top: 1rem;
   font-size: 1rem;
   color: rgb(4, 132, 146);
 }
 
+/*login link hover style*/
 .register-btn:hover {
   background-color: rgba(4, 132, 146, 0.3);
 }
