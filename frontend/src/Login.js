@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Login.css'; // 引入自定义的CSS样式文件
+import { User, Lock } from 'lucide-react'; // 引入图标
+import logoImage from './logo_image.png';
+
+
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
@@ -22,7 +26,7 @@ function Login({ onLogin }) {
       }),
     });
 
-    const data = await response.json();
+    // const data = await response.json();
     if (response.ok) {
       // 保存用户名到 localStorage
       localStorage.setItem('username', username);
@@ -38,31 +42,38 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">Login to Your Account</h2>
+        <img src={logoImage} alt="AASYP Logo" className="logo-image"/>
+        <h2 className="login-title">Welcome to AASYP Chat</h2>
+        <p className="login-subtitle">Sign in to connect with your AASYP community</p>
         <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            className="login-input"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            className="login-input"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <button type="submit" className="login-btn">Log In</button>
+          <div className="relative">
+            <User className="input-icon h-5 w-5 text-gray-400" />
+            <input
+              type="text"
+              className="login-input"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div className="relative">
+            <Lock className="input-icon h-5 w-5 text-gray-400" />
+            <input
+              type="password"
+              className="login-input"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit" className="login-btn">Sign in</button>
         </form>
-
-        {/* 如果没有账户，引导用户到注册页面 */}
-        <p className="register-link">
-          Don't have an account? <Link to="/register">Register here</Link>
-        </p>
+        
+        <div className="register-link">
+          Don't have an account? <Link to="/register" className="text-customOrange hover:text-customOrangeDark">Register</Link>
+        </div>
       </div>
     </div>
   );
